@@ -164,6 +164,7 @@ hr.foot0{
 /* Page */
 
 #page {
+                height:900px;
 	width: 900px;
 	margin: 0 auto;
 	padding: 45px 35px 45px 25px;
@@ -236,20 +237,47 @@ hr.foot0{
 	font-size: 18px;
 }
 
-/* Calendar */
 
 
-#sidebar #calendar {
-	padding: 0;
-	background:  no-repeat;
+
+/*videoArea*/
+#videoArea {
+                 width: 900px;
+	margin: 0 auto;
+                padding: 45px 35px 45px 25px;
+                background: url(images/img05.gif) no-repeat;
+}no-repeat;
+}
+/* Content1 */
+
+#content1 {
+	height:900px;
+	width: 900px;
+	/*margin: 0 auto;*/
+	
+                
 }
 
+#videolist{
+                float: left;
+	width: 603px;
+                background: no-repeat;
+                
 
-#calendar caption {
-	margin: -20px auto 0 auto;
-	text-align: center;
-	font-weight: bold;
 }
+
+#videolist ul {
+	margin: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#videolist li {
+	float: left;
+	padding: 0 20px 0 22px;
+               
+}
+
 
 
 /* Footer */
