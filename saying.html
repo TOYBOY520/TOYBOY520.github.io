@@ -1,0 +1,96 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; " />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>网页日志记录本</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 {
+            text-align:left ;
+            font-family:'Times New Roman', Times, serif;
+            color:Highlight;
+        }
+
+        textarea {
+            vertical-align: top;
+            margin-top: 40px;
+            width: 94%;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        input[type="submit"], input[type="button"] {
+            width: 80px;
+            height: 24px;
+            background-color: #FFA500;
+        }
+
+        table {
+            width: 94%;
+            border: 1px solid black;
+            margin-top: 6px;
+            margin-left:3%;
+        }
+       
+       table td {
+            border: 1px solid black;
+            padding: 4px;
+       }
+        body {
+       background-image:url(images/img14.jpg);
+            }
+    </style>
+    
+</head>
+<body onload="showDiary()">
+    <h3>日志-随手记录点滴</h3>
+    <div>
+<textarea id="memo" cols="110" rows="4"></textarea>
+    </div>
+    <br>
+    <div>
+        <input type="button" width="200" style="background-color:cadetblue;color:black ;border-radius:12px" value="保存日志" onClick="saveDiary()" id="save">
+        <input type="button" width="200" style="background-color:brown;color:black ;border-radius:12px"value="Del全部日志" onClick="clearDiary()">
+    </div>
+    <p id="msg"></p>
+
+    <script type="text/javascript">
+        function saveDiary(){
+        var textarea = document.getElementById('memo')
+        var value = textarea.value
+        var time = new Date().toLocaleString()
+        localStorage.setItem(time,value)
+
+        showDiary()
+        }
+        function showDiary(){
+        var result = '<table cellspacing="0"><tr><td align="center">日志内容</td><td align="center">保存时间</td><td align="center">操作</td>'
+        for(let i = 0; i< localStorage.length; i++){
+        var key = localStorage.key(i)
+        var value = localStorage.getItem(key)
+        result+='<tr><td>' + value + '</td><td> '+ key + '</td><td><button onclick="delDiary(this)">删除</button></td></tr>'
+        }
+        result+='</table>'
+        document.getElementById('msg').innerHTML = result
+
+        }
+        function delDiary(obj) {
+        var key = obj.parentNode.parentNode.rowIndex - 1
+        var index = localStorage.key(key)
+        localStorage.removeItem(index)
+        obj.parentNode.parentNode.remove()
+        }
+        function clearDiary(){
+        localStorage.clear()
+        showDiary()
+        }
+    </script>
+</body>
+</html>
