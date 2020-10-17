@@ -291,7 +291,8 @@ hr.foot0{
 /*Other*/
 #otherArea {
                 width: 900px;
-	            margin: 0 auto;
+                 height:400px;
+	margin: 0 auto;
                 padding: 45px 35px 45px 25px;
                 background: url(images/img05.gif) no-repeat;
 }
