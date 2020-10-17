@@ -1,9 +1,9 @@
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html; " />
+    <meta http-equiv="content-type" content="text/html;charset="utf-8" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <title>ÍøÒ³ÈÕÖ¾¼ÇÂ¼±¾</title>
+    <title>ç½‘é¡µæ—¥å¿—è®°å½•æœ¬</title>
     <style>
         * {
             margin: 0;
@@ -50,14 +50,14 @@
     
 </head>
 <body onload="showDiary()">
-    <h3>ÈÕÖ¾-ËæÊÖ¼ÇÂ¼µãµÎ</h3>
+    <h3>æ—¥å¿—-éšæ‰‹è®°å½•ç‚¹æ»´</h3>
     <div>
 <textarea id="memo" cols="110" rows="4"></textarea>
     </div>
     <br>
     <div>
-        <input type="button" width="200" style="background-color:cadetblue;color:black ;border-radius:12px" value="±£´æÈÕÖ¾" onClick="saveDiary()" id="save">
-        <input type="button" width="200" style="background-color:brown;color:black ;border-radius:12px"value="DelÈ«²¿ÈÕÖ¾" onClick="clearDiary()">
+        <input type="button" width="200" style="background-color:cadetblue;color:black ;border-radius:12px" value="ä¿å­˜æ—¥å¿—" onClick="saveDiary()" id="save">
+        <input type="button" width="200" style="background-color:brown;color:black ;border-radius:12px"value="Delå…¨éƒ¨æ—¥å¿—" onClick="clearDiary()">
     </div>
     <p id="msg"></p>
 
@@ -71,11 +71,11 @@
         showDiary()
         }
         function showDiary(){
-        var result = '<table cellspacing="0"><tr><td align="center">ÈÕÖ¾ÄÚÈİ</td><td align="center">±£´æÊ±¼ä</td><td align="center">²Ù×÷</td>'
+        var result = '<table cellspacing="0"><tr><td align="center">æ—¥å¿—å†…å®¹</td><td align="center">ä¿å­˜æ—¶é—´</td><td align="center">æ“ä½œ</td>'
         for(let i = 0; i< localStorage.length; i++){
         var key = localStorage.key(i)
         var value = localStorage.getItem(key)
-        result+='<tr><td>' + value + '</td><td> '+ key + '</td><td><button onclick="delDiary(this)">É¾³ı</button></td></tr>'
+        result+='<tr><td>' + value + '</td><td> '+ key + '</td><td><button onclick="delDiary(this)">åˆ é™¤</button></td></tr>'
         }
         result+='</table>'
         document.getElementById('msg').innerHTML = result
