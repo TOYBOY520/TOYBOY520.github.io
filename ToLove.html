@@ -1,0 +1,99 @@
+<HTML>
+<HEAD>
+    <META http-equiv="content-type" content="text/html; "/>
+ 
+    <title>表白</title>
+</HEAD>
+<BODY>
+    <script>
+       
+        alert("欢迎来到小白联盟");
+       //询问年龄
+        var q1=prompt("你的年龄是？（不会外泄的，放心！）\n",""); 
+        if(q1<=18)
+         alert("年轻人好好念书！");
+        else if(q1>18&&q1<22)
+         alert("该是时候了！好好加油！");
+        else if(q1>=22&&q1<25)
+         alert("不准备考研，谈什么恋爱？如果保研当我没说。");
+        else if(q1>=25&&q1<=30)
+         alert("还单着？真有你的！");
+        else if(q1>30)
+         alert("出门右拐！！！");
+
+      //询问性别
+        var q2=prompt("你的性别是？(男/女)\n","");  
+        if(q2=="男")
+            alert("既然是男的，不多说直接进入下一个话题。");
+        else if(q2=="女")
+            alert("小姐姐，我是男的。我也单着呢！！！（暗示）");
+
+       //询问恋爱史
+        var q3=prompt("有没有恋爱史？(有/没有)\n",""); 
+         if(q3=="有")
+            alert("唉！不多说，直接进入下一个话题。我还没有过呢。");
+        else if(q3=="没有")
+            alert("我也是，同病相怜。小白求关注！！！");
+
+       //问男的女的
+        if(q3=="有"){
+         var q4=prompt("咳咳，老实交代恋爱对象男的女的？(男/女)\n",""); 
+         if(q2=="男"&&q4=="男")
+            alert("真有你的！");
+         else if(q2=="男"&&q4=="女")
+            alert("还算正常！");
+         else if(q2=="女"&&q4=="女")
+            alert("真有你的！");
+         else if(q2=="女"&&q4=="男")
+            alert("还算正常！");
+     }
+        //找怎么样的
+        var q5=prompt("你想找比你年龄大的？还是小的？(大/小)\n","");
+        if (q2=="男"&&q5=="大")
+            alert("哦，可以！还行！为您的服务到此结束！");
+        else if (q2=="女"&&q5=="小")
+            alert("建议同龄或稍大。你懂的。");
+        else alert("程序觉得可以哦");
+
+        //end环节
+       
+        if(q2=="女")
+        { 
+        alert("进入最重要的环节");
+        var q6=prompt("小姐姐，我又忘了。你说你年龄多大？","");
+        if(q6>=18&&q6<=25){
+           alert("小姐姐咱俩差不多呢！");
+           alert("你看你也单着，我也单着，要不。。。");
+           }
+         var q7=confirm("那个...同意了？(/害羞)\n");
+         if(q7==true)
+            alert("握住你的小手手！拍照片发朋友圈。");
+         else console.log(xunhuan());
+        }     
+
+         function xunhuan()
+        {
+         var q8=confirm("小姐姐再考虑下嘛,就同意吧！");
+                   if(q8==true)
+                       alert("握住你的小手手！拍照片发朋友圈。");
+                    else{
+                        var q9=confirm("小姐姐重新再考虑下嘛，在一起吧。" );
+                          if(q9==true)
+                            alert("握住你的小手手！");
+                            else {
+                                 var q10=confirm("先救你，我妈妈会游泳"); 
+                                     if(q10==true)
+                                        alert("握住你打小手手！拍照片发朋友圈。");
+                                      else{
+                                             var q11=confirm("钱都交给你管"); 
+                                             if(q11==true)
+                                                alert("握住你打小手手！拍照片发朋友圈。");
+                                             else console.log(xunhuan());
+                                           }
+                                 }
+                          
+                         }
+        }
+    </script>
+</BODY>
+</HTML>
