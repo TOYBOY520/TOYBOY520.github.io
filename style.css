@@ -251,11 +251,10 @@ hr.foot0{
 
 /*videoArea*/
 #videoArea {
-                 width: 900px;
-	margin: 0 auto;
+                width: 900px;
+	        margin: 0 auto;
                 height:550px;
                 padding: 45px 35px 45px 25px;
-	 background: url(images/img05.gif) no-repeat;
 }
 
 #videolist{
