@@ -253,7 +253,7 @@ hr.foot0{
 #videoArea {
                  width: 900px;
 	margin: 0 auto;
-                height:400px;
+                height:450px;
                 padding: 45px 35px 45px 25px;
                 background: url(images/img05.gif) no-repeat;
 }
@@ -261,7 +261,7 @@ hr.foot0{
 /* Content1 */
 
 #content1 {
-	height:900px;
+	height:400px;
 	width: 900px;           
 }
 
