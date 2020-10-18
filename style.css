@@ -253,16 +253,9 @@ hr.foot0{
 #videoArea {
                  width: 900px;
 	margin: 0 auto;
-                height:450px;
-                padding: 45px 35px 45px 25px
-}
-
-/* Content1 */
-
-#content1 {
-	height:400px;
-	width: 900px;           
-                background: url(images/img05.gif) no-repeat;
+                height:550px;
+                padding: 45px 35px 45px 25px;
+	 background: url(images/img05.gif) no-repeat;
 }
 
 #videolist{
@@ -284,40 +277,6 @@ hr.foot0{
 	padding: 0 20px 0 22px;
                
 }
-
-
-
-
-/*Other*/
-#otherArea {
-                width: 900px;
-                height:900px;
-	margin: 0 auto;
-                padding: 45px 35px 45px 25px;
-                background: url(images/img05.gif) no-repeat;
-}
-
-/* otherContent1 */
-
-#otherContent1 {
-	height:300px;
-	width: 900px;
-	/*margin: 0 auto;*/                
-}
-
-#otherlist{
-                float: left;
-	            width: 603px;
-                background: no-repeat;
-}
-
-#otherArea textarea {
-	height: 50px;
-	width: 260px;
-	
-}
-
-
 
 
 /* Footer */
