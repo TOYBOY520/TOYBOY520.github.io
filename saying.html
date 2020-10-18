@@ -10,7 +10,7 @@
             padding: 0;
         }
 
-        h3 {
+        h2 {
             text-align:center ;
             font-family:'Times New Roman', Times, serif;
             color:black;
@@ -50,7 +50,7 @@
     
 </head>
 <body onload="showDiary()">
-    <h2>日志-随手记录点滴</h2>
+    <h3>日志-随手记录点滴</h3>
     <div>
 <textarea id="memo" cols="110" rows="7"></textarea>
     </div>
@@ -75,7 +75,7 @@
         for(let i = 0; i< localStorage.length; i++){
         var key = localStorage.key(i)
         var value = localStorage.getItem(key)
-        result+='<tr><td>' + value + '</td><td> '+ key + '</td><td><button onclick="delDiary(this)" style="background-color:red;color:black ;border-radius:12px ;width:50px"  >删除</button></td></tr>'
+        result+='<tr><td>' + value + '</td><td> '+ key + '</td><td><button onclick="delDiary(this)" style="background-color:red;color:black ;border-radius:12px" width="200" >删除</button></td></tr>'
         }
         result+='</table>'
         document.getElementById('msg').innerHTML = result
