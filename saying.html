@@ -11,9 +11,9 @@
         }
 
         h3 {
-            text-align:left ;
+            text-align:center ;
             font-family:'Times New Roman', Times, serif;
-            color:Highlight;
+            color:black;
         }
 
         textarea {
@@ -52,12 +52,12 @@
 <body onload="showDiary()">
     <h3>日志-随手记录点滴</h3>
     <div>
-<textarea id="memo" cols="110" rows="4"></textarea>
+<textarea id="memo" cols="110" rows="7"></textarea>
     </div>
     <br>
     <div>
         <input type="button" width="200" style="background-color:cadetblue;color:black ;border-radius:12px" value="保存日志" onClick="saveDiary()" id="save">
-        <input type="button" width="200" style="background-color:brown;color:black ;border-radius:12px"value="Del全部日志" onClick="clearDiary()">
+        <input type="button" width="200" style="background-color:brown;color:black ;border-radius:12px"value="Delete all" onClick="clearDiary()">
     </div>
     <p id="msg"></p>
 
@@ -75,7 +75,7 @@
         for(let i = 0; i< localStorage.length; i++){
         var key = localStorage.key(i)
         var value = localStorage.getItem(key)
-        result+='<tr><td>' + value + '</td><td> '+ key + '</td><td><button onclick="delDiary(this)">删除</button></td></tr>'
+        result+='<tr><td>' + value + '</td><td> '+ key + '</td><td><button onclick="delDiary(this)" style="background-color:red;color:black ;border-radius:12px" >删除</button></td></tr>'
         }
         result+='</table>'
         document.getElementById('msg').innerHTML = result
