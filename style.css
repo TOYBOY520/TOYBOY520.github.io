@@ -254,8 +254,7 @@ hr.foot0{
                  width: 900px;
 	margin: 0 auto;
                 height:450px;
-                padding: 45px 35px 45px 25px;
-                background: url(images/img05.gif) no-repeat;
+                padding: 45px 35px 45px 25px
 }
 
 /* Content1 */
@@ -263,6 +262,7 @@ hr.foot0{
 #content1 {
 	height:400px;
 	width: 900px;           
+                background: url(images/img05.gif) no-repeat;
 }
 
 #videolist{
