@@ -6,10 +6,10 @@ if(box1=="lss" && box2=="123456")
    {
      window.location.href="theme.html";
    }    
-else alert("Wrong username or password!");
+else alert("Wrong username or password");
 }
 
 function reset()
 {
-  alert("Not available£¡");
+  alert("Not available");
 }
