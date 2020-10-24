@@ -6,10 +6,10 @@ if(box1=="lss" && box2=="123456")
    {
      window.location.href="theme.html";
    }    
-else alert("用户名或密码有误!");
+else alert("Wrong username or password!");
 }
 
 function reset()
 {
-  alert("暂时无此功能！");
+  alert("Not available！");
 }
