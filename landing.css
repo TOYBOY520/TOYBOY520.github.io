@@ -1,13 +1,24 @@
 body {
     font-size: 13px;
-    background: cadetblue ;  /*url(images/img17.jpg)*/
+    background:white ;  /*url(images/img17.jpg)*/
+}
+
+#logo {
+    height: 70px;
+    width: 80%;
+    text-align: left;
+    margin-left: 10%;
+    background: cadetblue;
+    border-radius:12px;
 }
 
 #landingArea {
     height: 400px;
-    width: 1020px;
+    width: 80%;
     background-color: cadetblue;
-    margin: 10px 75px 0px 175px;
+    //margin: 10px 75px 0px 95px;
+    margin-top:25px;
+    margin-left:10%;
     border-radius: 12px;
     border: 2px solid black;
 }
@@ -34,6 +45,15 @@ body {
     margin: 70px 45px 0 45px
 }
 
+#foot {
+    height: 20px;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    background: cadetblue;
+    border-radius: 12px;
+}
+
 .spanred {
     font-family:'Times New Roman', Times, serif;
     font-size: 40px;
@@ -54,5 +74,5 @@ padding: 20px 30px 0 60px
 }
 
 h4 {
-    padding:10px 0 0 90px
+    padding:0 0 0 90px
 }
