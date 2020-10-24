@@ -1,0 +1,58 @@
+body {
+    font-size: 13px;
+    background: cadetblue ;  /*url(images/img17.jpg)*/
+}
+
+#landingArea {
+    height: 400px;
+    width: 1020px;
+    background-color: cadetblue;
+    margin: 10px 75px 0px 175px;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+#intr {
+    height: 320px;
+    width: 400px;
+    float: left;
+    background-color: antiquewhite;
+    /*background: url(images/img16.jpg);*/
+    border-radius: 12px;
+    margin: 20px 0px 0 45px;
+    border: 2px solid black;
+}
+
+#land {
+    height: 300px;
+    width: 450px;
+    float: right;
+    background-color: antiquewhite;
+    background: url(images/img16.jpg);
+    border-radius: 12px;
+    border: 2px solid black;
+    margin: 70px 45px 0 45px
+}
+
+.spanred {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.spanblue {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+}
+
+
+table {
+padding:40px 30px 0 60px
+}
+
+
+h2 {
+padding: 20px 30px 0 60px
+}
+
+h4 {
+    padding:10px 0 0 90px
+}
